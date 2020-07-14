@@ -1,0 +1,5 @@
+I think that the first protect statement that returns -1 instead of ft_error could in certain circumstances cause the function to not exit cleanly (by not clearing 'remainder' from the previous iteration of the GNL function). Review this if you end up rewriting it.
+
+Also make the bonus not automatically assign 1024 strings if it may only need one (use another static to keep track of this, or just a linked list).
+
+An approach that doesn't involve 'memmoving' would be more efficient, also.
